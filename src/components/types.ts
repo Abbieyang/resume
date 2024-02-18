@@ -21,6 +21,7 @@ export type ResumeConfig = {
     workPlace?: string;
     /** 职位 */
     positionTitle?: string;
+    blog?: string;
   };
 
   /** 标题名称映射 */

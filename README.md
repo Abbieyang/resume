@@ -1,7 +1,7 @@
 ## 🧾 Resume Generator
 
 在线简历生成器。无须 fork 仓库，即可在线预览、编辑和下载 PDF 简历。✨ [在线编辑](https://visiky.github.io/resume)
-
+http://localhost:8000/?lang=zh-CN&mode=edit&template=template2&user=Abbieyang
 内置 3 套模板，支持**自定义主题颜色**、**自定义模块标题**、**国际化(中/英)** 等.
 
 |默认模板| 简易模板| 简易模板2（适用于多页）|

@@ -10,6 +10,7 @@ import {
   EnvironmentFilled,
   HeartFilled,
   CrownFilled,
+  HomeFilled,
 } from '@ant-design/icons';
 import cx from 'classnames';
 import _ from 'lodash-es';
@@ -105,21 +106,7 @@ export const Template2: React.FC<Props> = props => {
                   </span>
                 </div>
               )}
-              {profile?.zhihu && (
-                <div className="github">
-                  <ZhihuCircleFilled
-                    style={{ color: theme.color, opacity: 0.85 }}
-                  />
-                  <span
-                    style={{ cursor: 'pointer' }}
-                    onClick={() => {
-                      window.open(profile.zhihu);
-                    }}
-                  >
-                    {profile.zhihu}
-                  </span>
-                </div>
-              )}
+
               {profile?.workExpYear && (
                 <div className="work-exp-year">
                   <ScheduleFilled
@@ -145,6 +132,34 @@ export const Template2: React.FC<Props> = props => {
                   <HeartFilled style={{ color: theme.color, opacity: 0.85 }} />
                   <span>
                     <FormattedMessage id="职位" />: {profile.positionTitle}
+                  </span>
+                </div>
+              )}
+              {profile?.blog && (
+                <div className="github">
+                  <HomeFilled style={{ color: theme.color, opacity: 0.85 }} />
+                  <span
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => {
+                      window.open(profile.blog);
+                    }}
+                  >
+                    {profile.blog}
+                  </span>
+                </div>
+              )}
+              {profile?.zhihu && (
+                <div className="github">
+                  <ZhihuCircleFilled
+                    style={{ color: theme.color, opacity: 0.85 }}
+                  />
+                  <span
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => {
+                      window.open(profile.zhihu);
+                    }}
+                  >
+                    {profile.zhihu}
                   </span>
                 </div>
               )}
