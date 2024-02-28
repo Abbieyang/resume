@@ -159,7 +159,7 @@ export const Template2: React.FC<Props> = props => {
                       window.open(profile.zhihu);
                     }}
                   >
-                    {profile.zhihu}
+                    {profile.zhihu} (27k 关注)
                   </span>
                 </div>
               )}
